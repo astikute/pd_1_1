@@ -35,7 +35,7 @@ namespace pd_1_1
             //Uzdevums_4
             Console.Write("Ievadiet skaitli: ");
             double skaitlis = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Mans skaitlis ir " + skaitlis + ".");
+            Funkcija(skaitlis);
 
             //Uzdevums_5
             Console.Write("Ievadiet simbolu virkni: ");
@@ -50,7 +50,7 @@ namespace pd_1_1
             }
 
             //Uzdevums_6
-            Console.WriteLine("Vai gribat sasveicinaties?");
+            Console.WriteLine("Vai gribat sasveicinaties (ja/ne)?");
             string izvele = Console.ReadLine();
             if (izvele == "ja")
             {
@@ -68,5 +68,12 @@ namespace pd_1_1
             Console.Read();
 
         }
+
+        //Uzdevuma_4_funkcija
+        static void Funkcija(double abc)
+        {
+            Console.WriteLine("Mans skaitlis ir " + abc + ".");
+        }
+
     }
 }
